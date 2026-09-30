@@ -19,14 +19,17 @@
 ## Ход работы
 
 ```mermaid
-flowchart LR
-    A["100 синтетических изображений"] --> B["Ручная YOLO-разметка"]
-    B --> C["YOLOv8s multiclass"]
-    C --> D["Анализ слабых классов"]
-    D --> E["Расширение датасета до 162 изображений"]
-    E --> F["Binary: defect / no defect"]
-    F --> G["Decision layer"]
-    G --> H["Журнал диагностических событий"]
+flowchart TD
+    A["100 синтетических изображений"]
+    B["Ручная YOLO-разметка"]
+    C["YOLOv8s multiclass"]
+    D["Анализ слабых классов"]
+    E["Расширение датасета<br/>до 162 изображений"]
+    F["Binary: defect / no defect"]
+    G["Decision layer"]
+    H["Журнал диагностических событий"]
+
+    A --> B --> C --> D --> E --> F --> G --> H
 ```
 
 
@@ -91,13 +94,16 @@ Image-level результат получен на небольшом синте
 В практической части выход RGB-модели использовался как один из признаков диагностического события. Магнитный и координатный каналы в эксперименте моделировались программно.
 
 ```mermaid
-flowchart LR
+flowchart TD
     A["RGB image"] --> B["YOLOv8s"]
     B --> C["camera_conf"]
+
     D["simulated hall_score"] --> F["Decision layer"]
-    E["simulated rope position"] --> G["Event metadata"]
     C --> F
-    F --> G
+
+    F --> G["Event metadata"]
+    E["simulated rope position"] --> G
+
     G --> H["CSV journal"]
 ```
 
