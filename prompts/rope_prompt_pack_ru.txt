@@ -1,0 +1,327 @@
+# Пакет промптов для генерации синтетического датасета дефектов талевого каната
+
+## Как использовать
+1. Копируй один промпт целиком в Nano Banana Pro / Gemini Image.
+2. Генерируй 1 изображение на 1 промпт.
+3. Если результат хороший — сохраняй. Если плохой — просто запускай тот же промпт еще раз.
+4. Для класса `normal` рамки bbox не нужны, но нужны пустые `.txt` файлы разметки.
+5. Для классов дефектов делай bbox вокруг одного основного дефекта.
+
+## Рекомендуемая схема
+- broken_wire: 25 изображений
+- corrosion: 25 изображений
+- kink_or_bend: 25 изображений
+- normal: 25 изображений
+- Итого: 100 изображений
+
+## Именование файлов
+Сохраняй изображения по шаблону `class_XXX.jpg`, например `broken_wire_001.jpg`, `corrosion_014.jpg`, `normal_025.jpg`.
+
+## Обрыв проволок (`broken_wire`)
+
+### broken_wire_001.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is near the center of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_002.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is near the center of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_003.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is near the center of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_004.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is near the center of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_005.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is near the center of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_006.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is on the left third of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_007.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is on the left third of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_008.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is on the left third of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_009.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is on the left third of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_010.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is on the left third of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_011.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is on the right third of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_012.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is on the right third of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_013.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is on the right third of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_014.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is on the right third of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_015.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is on the right third of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_016.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is slightly above the center of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_017.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is slightly above the center of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_018.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is slightly above the center of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_019.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is slightly above the center of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_020.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is slightly above the center of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_021.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is slightly below the center of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_022.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is slightly below the center of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_023.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is slightly below the center of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_024.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is slightly below the center of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### broken_wire_025.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. The rope has a single localized defect: several broken outer wires protruding from one strand, with sharp bent wire ends clearly visible. The defect is slightly below the center of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. Keep the rest of the rope intact and realistic. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+## Коррозия (`corrosion`)
+
+### corrosion_001.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is near the center of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_002.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is near the center of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_003.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is near the center of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_004.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is near the center of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_005.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is near the center of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_006.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is on the left third of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_007.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is on the left third of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_008.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is on the left third of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_009.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is on the left third of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_010.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is on the left third of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_011.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is on the right third of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_012.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is on the right third of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_013.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is on the right third of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_014.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is on the right third of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_015.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is on the right third of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_016.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is slightly above the center of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_017.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is slightly above the center of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_018.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is slightly above the center of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_019.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is slightly above the center of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_020.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is slightly above the center of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_021.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is slightly below the center of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_022.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is slightly below the center of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_023.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is slightly below the center of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_024.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is slightly below the center of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### corrosion_025.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. The rope has a single localized defect: visible external corrosion with orange-brown rust patches, dark oxidation, and small pitting on several strands. The corroded area is slightly below the center of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. Keep the rope structure clear and realistic, with one main corrosion zone only. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+## Залом / перегиб (`kink_or_bend`)
+
+### kink_or_bend_001.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is near the center of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_002.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is near the center of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_003.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is near the center of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_004.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is near the center of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_005.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is near the center of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_006.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is on the left third of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_007.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is on the left third of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_008.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is on the left third of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_009.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is on the left third of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_010.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is on the left third of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_011.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is on the right third of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_012.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is on the right third of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_013.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is on the right third of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_014.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is on the right third of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_015.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is on the right third of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_016.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is slightly above the center of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_017.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is slightly above the center of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_018.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is slightly above the center of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_019.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is slightly above the center of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_020.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is slightly above the center of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_021.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is slightly below the center of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_022.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is slightly below the center of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_023.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is slightly below the center of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_024.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is slightly below the center of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### kink_or_bend_025.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. The rope has a single localized defect: a clear kink or bend deformation, with strands compressed on one side and stretched on the other. The deformed area is slightly below the center of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. Show a realistic mechanical deformation without breaking the whole rope. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+## Нормальный канат (`normal`)
+
+### normal_001.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible near the center of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_002.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible near the center of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_003.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible near the center of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_004.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible near the center of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_005.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible near the center of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_006.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible on the left third of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_007.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible on the left third of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_008.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible on the left third of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_009.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible on the left third of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_010.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible on the left third of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_011.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible on the right third of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_012.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible on the right third of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_013.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible on the right third of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_014.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible on the right third of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_015.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible on the right third of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_016.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible slightly above the center of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_017.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible slightly above the center of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_018.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible slightly above the center of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_019.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible slightly above the center of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_020.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible slightly above the center of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_021.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible slightly below the center of the image. Use bright daylight, blurred drilling rig background, clean metallic surface, and rope running horizontally across the frame. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_022.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, macro close-up. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible slightly below the center of the image. Use low industrial lighting, dark workshop background, oily dirty surface, and rope running diagonally across the frame. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_023.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, side angle view. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible slightly below the center of the image. Use yellow workshop lighting, metal equipment background softly blurred, dusty surface, and rope oriented from top-left to bottom-right. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_024.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, top-down view. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible slightly below the center of the image. Use soft diffused light, neutral gray industrial background, slightly rusty surface, and rope running vertically through the frame. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+
+### normal_025.jpg
+Photorealistic industrial inspection image of a steel drilling wire rope, close-up inspection photo. Show an intact rope with no visible defects, no broken wires, no corrosion, no kink, and no crushing. The rope should be clearly visible slightly below the center of the image. Use harsh side lighting, outdoor oilfield background softly blurred, wet metallic surface, and rope oriented at a slight diagonal. The rope must look realistic, industrial, and suitable as a normal reference sample. No text, no labels, no arrows, no watermark, no hands, no tools, no extra ropes, no diagram.
+

@@ -1,0 +1,17 @@
+﻿event_id,image_name,rope_position_m,gt_type,gt_defect,camera_conf,camera_defect,hall_score,magnetic_anomaly,risk_score,decision,risk_level,recommended_action
+1,broken_wire_005_jpg.rf.c80cc886878c725b5fb519f6c9dc02a3.jpg,10.01,broken_wire,1,0.6769,1,0.7062,1,0.6886,CONFIRMED_DEFECT,HIGH,"Записать подтвержденный дефект, назначить внеочередной контроль."
+2,broken_wire_012_jpg.rf.dabc3ef679d73afd2de41c87148c74cf.jpg,10.77,broken_wire,1,0.519,1,0.8153,1,0.6375,CONFIRMED_DEFECT,HIGH,"Записать подтвержденный дефект, назначить внеочередной контроль."
+3,broken_wire_020_jpg.rf.11e9793bf91df45653ec6f038279359d.jpg,11.44,broken_wire,1,0.5582,1,0.6569,1,0.5977,CONFIRMED_DEFECT,HIGH,"Записать подтвержденный дефект, назначить внеочередной контроль."
+4,broken_wire_024_jpg.rf.957ebb24656b7cd85ecf212c817eb871.jpg,12.25,broken_wire,1,0.3963,1,0.6904,1,0.5139,CONFIRMED_DEFECT,HIGH,"Записать подтвержденный дефект, назначить внеочередной контроль."
+5,broken_wire_026_jpg.rf.94e4e71c145e94763de74bce092e7d02.jpg,13.0,broken_wire,1,0.8201,1,0.756,1,0.7945,CRITICAL_DEFECT,HIGH,Немедленный визуальный осмотр и повторная диагностика участка.
+6,corrosion_001_jpg.rf.41c45a37b5979e5a39db2485f2b259e6.jpg,13.78,corrosion,1,0.3851,1,0.5154,0,0.4372,VISUAL_SUSPECT,MEDIUM,Проверить участок оператором.
+7,corrosion_019_jpg.rf.be12a15ebc71d478da5810a5f0067e5e.jpg,14.5,corrosion,1,0.5174,1,0.5852,1,0.5445,CONFIRMED_DEFECT,HIGH,"Записать подтвержденный дефект, назначить внеочередной контроль."
+8,kink_or_bend_001_jpg.rf.8060c2ae03050e1a31bdf55a91e09620.jpg,15.26,kink_or_bend,1,0.7152,1,0.5665,1,0.6557,CONFIRMED_DEFECT,HIGH,"Записать подтвержденный дефект, назначить внеочередной контроль."
+9,kink_or_bend_006_jpg.rf.a153ae97b03fbf40b45852288d896651.jpg,16.01,kink_or_bend,1,0.8013,1,0.579,1,0.7124,CONFIRMED_DEFECT,HIGH,"Записать подтвержденный дефект, назначить внеочередной контроль."
+10,kink_or_bend_029_jpg.rf.04e994b8d3f81033fe8158778ff4fc91.jpg,16.78,kink_or_bend,1,0.0732,0,0.4788,0,0.2354,NORMAL,LOW,Продолжить штатный мониторинг.
+11,kink_or_bend_031_jpg.rf.dd018f6ff78b1c14cec65bbfc3d19cd3.jpg,17.49,kink_or_bend,1,0.615,1,0.5575,1,0.592,CONFIRMED_DEFECT,HIGH,"Записать подтвержденный дефект, назначить внеочередной контроль."
+12,kink_or_bend_050_jpg.rf.32dc13ee5f5c2e0463035c540e401d61.jpg,18.29,kink_or_bend,1,0.5009,1,0.5763,1,0.5311,CONFIRMED_DEFECT,HIGH,"Записать подтвержденный дефект, назначить внеочередной контроль."
+13,normal_016_jpg.rf.9e251e6bfc51bddeb226846b1b1c9189.jpg,18.99,normal,0,0.0,0,0.1086,0,0.0434,NORMAL,LOW,Продолжить штатный мониторинг.
+14,normal_019_jpg.rf.8dc5f77ba5e4a75d1132bd7edb5ee075.jpg,19.77,normal,0,0.3238,0,0.2434,0,0.2916,NORMAL,LOW,Продолжить штатный мониторинг.
+15,normal_021_jpg.rf.59a8d3c4470353e382f959fb0d18ad20.jpg,20.51,normal,0,0.4563,1,0.2814,0,0.3863,VISUAL_SUSPECT,MEDIUM,Проверить участок оператором.
+16,normal_030_jpg.rf.894e02256530590ed32be6c46e6a1d8c.jpg,21.31,normal,0,0.0,0,0.1045,0,0.0418,NORMAL,LOW,Продолжить штатный мониторинг.

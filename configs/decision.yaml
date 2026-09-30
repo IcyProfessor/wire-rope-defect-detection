@@ -1,0 +1,5 @@
+visual_threshold: 0.35
+magnetic_threshold: 0.55
+camera_weight: 0.60
+hall_weight: 0.40
+critical_threshold: 0.75
